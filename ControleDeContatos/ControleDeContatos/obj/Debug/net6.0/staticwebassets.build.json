@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EmBdMHG2yClGlx8G9IoCmAOkblg4HxosIkgsOCLXV7Q=",
+  "Hash": "y+PBuujqCehv9JlUw5vlkNsLTvq9YCW9iRvqf8vbJA0=",
   "Source": "ControleDeContatos",
   "BasePath": "_content/ControleDeContatos",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "ControleDeContatos\\wwwroot",
       "Source": "ControleDeContatos",
-      "ContentRoot": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
       "BasePath": "_content/ControleDeContatos",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ControleDeContatos.styles.css",
+      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ControleDeContatos.styles.css",
       "SourceId": "ControleDeContatos",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/ControleDeContatos",
       "RelativePath": "ControleDeContatos.styles.css",
       "AssetKind": "All",
@@ -31,13 +31,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ControleDeContatos.styles.css"
+      "OriginalItemSpec": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\bundle\\ControleDeContatos.styles.css"
     },
     {
-      "Identity": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ControleDeContatos.bundle.scp.css",
+      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ControleDeContatos.bundle.scp.css",
       "SourceId": "ControleDeContatos",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/ControleDeContatos",
       "RelativePath": "ControleDeContatos.bundle.scp.css",
       "AssetKind": "All",
@@ -48,13 +48,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ControleDeContatos.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ControleDeContatos.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\css\\site.css",
       "SourceId": "ControleDeContatos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
       "BasePath": "_content/ControleDeContatos",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -68,10 +68,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\favicon.ico",
       "SourceId": "ControleDeContatos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
       "BasePath": "_content/ControleDeContatos",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -85,10 +85,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\wwwroot\\js\\site.js",
+      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\js\\site.js",
       "SourceId": "ControleDeContatos",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
       "BasePath": "_content/ControleDeContatos",
       "RelativePath": "js/site.js",
       "AssetKind": "All",

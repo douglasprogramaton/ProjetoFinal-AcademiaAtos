@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XkpI+K7LN+JkxzRjZhGniJqGSvXLv07rE51NQn7Lu6UvXwqllmrErsu08nbk9VAXWxXekccliqpcWl0ivDs9ag==",
+  "dgSpecHash": "NxjfeNnEN09ozk1ZvSmjhIciG8r4CzRyaiLt5/8KSUsFiLDMeS8rhWTff24cxOi0hpm83uF36Vhsws+YgShpzg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\55119\\Desktop\\ControleDeContatos\\ControleDeContatos\\ControleDeContatos.csproj",
+  "projectFilePath": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\ControleDeContatos.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\55119\\.nuget\\packages\\fluentassertions\\6.7.0\\fluentassertions.6.7.0.nupkg.sha512",
     "C:\\Users\\55119\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
