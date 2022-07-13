@@ -1,0 +1,45 @@
+﻿@using ControleDeContatos.Enuns
+@model UsuarioModel
+@{
+    ViewData["TitLe"] = "Editar Usuario";
+}
+<div class="text-center">
+
+    <h1 class="display-4">Editar Usuario</h1>
+
+</div>
+
+<form asp-controller="Usuario" asp-action="Alterar" method="post">@*quando ele clicar no criar ele vai pegar o post do criar metodo criar no caso*@
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" asp-for="Name" class="form-control" placeholder="Digite o nome do usuario">
+    
+    @Html.ValidationMessageFor(x=>x.Name)
+  </div>
+  <div class="form-group">
+    <label for="email">E-mail</label>
+    <input type="text" asp-for="Email" class="form-control" placeholder="Digite o e-mail do Usuario">
+    @Html.ValidationMessageFor(x=>x.Email)
+  </div>
+    <div class="form-group">
+    <label for="login">Login</label>
+    <input type="text" asp-for="Login" class="form-control" placeholder="Digite o login do Usuario">
+    @Html.ValidationMessageFor(x=>x.Login)
+  </div>
+
+   
+    <div class="form-group">
+    <label for="perfil">Perfil</label>
+   <select asp-for="Perfil" class="form-control">
+       <option value="">Selecionar</option>
+       <option value="@PerfilEnum.Admin">Administrador</option>
+       <option value="@PerfilEnum.Padrao">Padrão</option>
+   </select>
+   @Html.ValidationMessageFor(x=>x.Perfil)
+   </div>
+ 
+  <button type="submit" class="btn btn-primary">Editar</button>
+  @* quando clicar ele vai voltar para index do contato *@               
+  <a class="btn btn-secondary" asp-controller="Usuario" asp-action="Index" role="button">Voltar</a>
+</form>

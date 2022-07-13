@@ -9,12 +9,17 @@ namespace ControleDeContatos.Repositorio
         {
             _bancoContext = bancoContext;
         }
+        public UsuarioModel BuscarPorLogin(string login)
+        {
+            return _bancoContext.Usuarios.FirstOrDefault(x => x.Login.ToUpper() == login.ToUpper());
+        }
         public UsuarioModel listarPorId(int id)
         {
             return _bancoContext.Usuarios.FirstOrDefault(x => x.Id == id);//para buscar o primeiro ou o item que esta dentro de contatos ,
                                                            //com uma clausula que diz que eu quero todo mundo da tabela contato
                                                            //onde x=>x.Id== ao Id.
         }
+        
         public List<UsuarioModel> BuscarTodos()
         {
             return _bancoContext.Usuarios.ToList();//Carrega tudo para a lista de contatosmodel"buscaTOdos"
@@ -23,6 +28,7 @@ namespace ControleDeContatos.Repositorio
         {
             //gravar no banco de dados 
             usuario.DataCadastro = DateTime.Now;
+            usuario.SetSenhaHash();
             _bancoContext.Usuarios.Add(usuario);
             _bancoContext.SaveChanges();//comitando a informação para o banco usando o metodo SaveChanges()
             return usuario;
@@ -51,9 +57,6 @@ namespace ControleDeContatos.Repositorio
             return true;
         }
 
-        ContatoModel IUsuarioRepositorio.listarPorId(int id)
-        {
-            throw new NotImplementedException();
-        }
+      
     }
 }

@@ -5,7 +5,9 @@ namespace ControleDeContatos.Repositorio
 {
     public interface IUsuarioRepositorio
     {
-        ContatoModel listarPorId(int id);
+
+        UsuarioModel BuscarPorLogin(string login);
+        UsuarioModel listarPorId(int id);
         List<UsuarioModel> BuscarTodos();
         UsuarioModel Adicionar(UsuarioModel usuario);
         UsuarioModel Atualizar(UsuarioModel usuario);

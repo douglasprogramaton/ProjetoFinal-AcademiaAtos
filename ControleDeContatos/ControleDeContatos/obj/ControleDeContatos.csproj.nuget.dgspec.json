@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\ControleDeContatos.csproj": {}
+    "C:\\Users\\55119\\Desktop\\Copia controlede contatos\\ControleDeContatos\\ControleDeContatos.csproj": {}
   },
   "projects": {
-    "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\ControleDeContatos.csproj": {
+    "C:\\Users\\55119\\Desktop\\Copia controlede contatos\\ControleDeContatos\\ControleDeContatos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\ControleDeContatos.csproj",
+        "projectUniqueName": "C:\\Users\\55119\\Desktop\\Copia controlede contatos\\ControleDeContatos\\ControleDeContatos.csproj",
         "projectName": "ControleDeContatos",
-        "projectPath": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\ControleDeContatos.csproj",
+        "projectPath": "C:\\Users\\55119\\Desktop\\Copia controlede contatos\\ControleDeContatos\\ControleDeContatos.csproj",
         "packagesPath": "C:\\Users\\55119\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\obj\\",
+        "outputPath": "C:\\Users\\55119\\Desktop\\Copia controlede contatos\\ControleDeContatos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\55119\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,6 +63,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.6, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
