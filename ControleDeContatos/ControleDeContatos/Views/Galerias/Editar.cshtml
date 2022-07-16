@@ -1,0 +1,23 @@
+﻿@using CadastrosBiblioteca.Models
+
+@model GaleriaModel
+@{
+    ViewData["TitLe"] = "Editar Galeria";
+}
+<div class="text-center">
+
+    <h1 class="display-4">Editar Galeiras</h1>
+
+</div>
+<form asp-controller="Galerias" asp-action="Editar" method="post"> 
+  <input type="hidden" asp-for="@Model.IdGaleria"/>
+  <div class="form-group">
+    <label for="nome">Nome</label>
+    <input type="text" asp-for="@Model.Titulo" class="form-control" placeholder="Digite o nome da galeria">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Editar</button>
+  @* quando clicar ele vai voltar para index do contato *@               
+  <a class="btn btn-secondary" asp-controller="Galeria" asp-action="Index" role="button">Voltar</a>
+</form>

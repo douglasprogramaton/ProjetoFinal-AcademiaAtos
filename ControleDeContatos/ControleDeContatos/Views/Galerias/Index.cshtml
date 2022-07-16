@@ -1,0 +1,70 @@
+﻿@using ControleDeContatos.Filters;
+@using CadastrosBiblioteca.Models;
+@model List<GaleriaModel>
+@{
+    ViewData["Title"] = "Listagem de contatos";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gop-2 d-md-flex justify-content-md-start">
+                                                    @* Recurso do asp.net razor /está falando que asp-controller vai ir na controler contato e asp-action vai na ação criar*@
+        <a class="btn btn-primary" role="button" asp-controller="Galerias" asp-action="Criar">Adicionar Galerias</a>
+    </div>
+        <br/>
+    @if (TempData["MensagemSucesso"] != null)
+    {
+          <div class="alert alert-success" role="alert">
+            <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">X</button>
+            @TempData["MensagemSucesso"]
+          </div>
+    }
+    @if (TempData["MensagemErro"] != null)
+    {
+        <div class="alert alert-danger" role="alert">
+          <button type="button" class="btn btn-danger btn-sm close-alert" arial-label="Close">X</button>  
+          @TempData["MensagemErro"]
+        </div>
+    }
+    <br/>
+      
+
+    <h1 class="display-4">Listagem de Galerias</h1>
+
+ 
+
+ <table class="table table-striped display" id="Galerias" >
+   
+      <thead>
+    <tr>
+      <th scope="col">Código</th>
+      <th scope="col">Nome</th>
+
+      <th scope="col"></th>
+     </tr>
+    </thead>
+     <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach(GaleriaModel galeria in Model)
+            {
+                <tr>
+                    <th scope="row">@galeria.IdGaleria</th>
+                    <td>@galeria.Titulo</td>
+                    
+                    <td>
+                        <div class="btn-group" role="group">
+                             <a role="button" class="btn btn-success" asp-route-id="@galeria.IdGaleria" asp-controller="Imagem" asp-action="Index">Imagem</a>
+                            <a role="button" class="btn btn-primary" asp-route-id="@galeria.IdGaleria" asp-controller="Galerias" asp-action="Editar">Editar</a>
+                            <a role="button" class="btn btn-danger"asp-route-id="@galeria.IdGaleria" asp-controller="Galerias" asp-action="Apagarconfirmar">Apagar</a>
+                        </div>
+                   <td/>
+                </tr>
+
+            }
+        } 
+ 
+     </tbody>
+
+    </table>
+  </div>

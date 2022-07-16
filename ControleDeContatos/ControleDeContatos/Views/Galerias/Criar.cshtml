@@ -1,0 +1,22 @@
+﻿@using ControleDeContatos.Filters;
+@using CadastrosBiblioteca.Models
+@model GaleriaModel
+@{
+    ViewData["Title"] = "Título da Galeria";
+}
+<div class="text-center">
+
+    <h1 class="display-4">Cadastrar Galeria</h1>
+
+</div>
+<form asp-action="Criar" method="post">
+  <div class="form-group">
+    <label for="nome" asp-for="@Model.Titulo" class="form-label ">Nome da Galeria</label>
+    <input type="text" asp-for="Titulo" class="form-control " placeholder="Digite o nome da galeria">
+    <span class="text-danger" asp-validation-for="@Model.Titulo"></span>
+  </div>
+  <button type="submit" class="btn btn-primary" >Criar Galeria</button>
+  <a class=" btn btn-secondary" asp-controller="Galerias" asp-action="Index" role="button">Voltar</a>
+</form>
+
+

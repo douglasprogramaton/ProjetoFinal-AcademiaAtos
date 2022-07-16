@@ -22,6 +22,45 @@ namespace ControleDeContatos.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
+            modelBuilder.Entity("CadastrosBiblioteca.Models.GaleriaModel", b =>
+                {
+                    b.Property<int>("IdGaleria")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdGaleria"), 1L, 1);
+
+                    b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdGaleria");
+
+                    b.ToTable("Galeria", (string)null);
+                });
+
+            modelBuilder.Entity("CadastrosBiblioteca.Models.ImagemModel", b =>
+                {
+                    b.Property<int>("IdImagem")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdImagem"), 1L, 1);
+
+                    b.Property<int>("IdGaleria")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("IdImagem");
+
+                    b.HasIndex("IdGaleria");
+
+                    b.ToTable("Imagem", (string)null);
+                });
+
             modelBuilder.Entity("ControleDeContatos.Models.ContatoModel", b =>
                 {
                     b.Property<int>("Id")
@@ -83,6 +122,22 @@ namespace ControleDeContatos.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Usuarios");
+                });
+
+            modelBuilder.Entity("CadastrosBiblioteca.Models.ImagemModel", b =>
+                {
+                    b.HasOne("CadastrosBiblioteca.Models.GaleriaModel", "Galeria")
+                        .WithMany("Imagens")
+                        .HasForeignKey("IdGaleria")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Galeria");
+                });
+
+            modelBuilder.Entity("CadastrosBiblioteca.Models.GaleriaModel", b =>
+                {
+                    b.Navigation("Imagens");
                 });
 #pragma warning restore 612, 618
         }

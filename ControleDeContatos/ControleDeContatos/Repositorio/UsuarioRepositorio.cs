@@ -11,7 +11,9 @@ namespace ControleDeContatos.Repositorio
         }
         public UsuarioModel BuscarPorLogin(string login)
         {
+#pragma warning disable CS8603 // Possível retorno de referência nula.
             return _bancoContext.Usuarios.FirstOrDefault(x => x.Login.ToUpper() == login.ToUpper());
+#pragma warning restore CS8603 // Possível retorno de referência nula.
         }
         public UsuarioModel listarPorId(int id)
         {

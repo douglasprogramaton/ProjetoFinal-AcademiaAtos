@@ -1,0 +1,40 @@
+﻿@using CadastrosBiblioteca.Models
+
+@model IEnumerable<ImagemModel>
+@{
+    ViewBag.Titulo = $"Imagens da Galeria<br>{ViewBag.TituloGaleria}</br>";
+}
+<a asp-controller="Imagem" asp-action="Criar" asp-route-id="@ViewBag.IdGaleria" class="btn btn-primary">Nova Imagem</a>
+
+
+<hr>
+@if(Model.Count()>0){
+    <table class="table table-striped tabela-imagem">
+      <thead>
+        <tr>
+            <th>Imagem</th>
+            <th>@Html.DisplayNameFor(model=>model.IdImagem)</th>
+            <th>@Html.DisplayNameFor(model=>model.Titulo)</th>
+            <th>Ações</th>
+        </tr>
+      </thead>
+      <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>
+                        <img src='@($"{item.CaminhoImagem}?{DateTime.Now.ToLocalTime()}")'width="80px">
+                    </td>
+                    <td>@item.IdImagem.ToString("D6")</td>
+                    <td>@item.Titulo</td>
+                    <td>
+                        <a asp-action="AplicaEfeito" asp-route-id="@item.IdImagem" class="btn btn-primary">Imagem</a>
+                        <a asp-action="Editar" asp-route-id="@item.IdImagem" class="btn btn-secondary">Editar</a>
+                        <a asp-action="Excluir" asp-route-id="@item.IdImagem" class="btn btn-danger">Excluir</a>
+                      
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

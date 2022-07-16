@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Controle de Contatos</title>
+    <title>@ViewData["Title"] - Biblioteca de Imagens</title>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css"/>
@@ -23,20 +23,26 @@
 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
     <ul class="navbar-nav flex-grow-1">
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Página Inicial</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Galerias" asp-action="Index">Galeria</a>
         </li>
+         </li>
+                         <li class="nav-item">
+                <a class="nav-link text-dark" asp-area="" asp-controller="Imagem" asp-action="Index">Imagens</a>
+            </li>
+              
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="Index">Contatos</a>
         </li>
         
                         <li class="nav-item">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Index">Usuários</a>
-            </li>
+           
               
-
+          
         <li class="nav-item">
             <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Sair">Sair</a>
         </li>
+       
     </ul>
 </div>  
             </div>
@@ -50,7 +56,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - Controle de Contatos
+            &copy; 2021 - Biblioteca de Imagens
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

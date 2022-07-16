@@ -21,7 +21,6 @@ namespace ControleDeContatos.Controllers
 
         public IActionResult Criar()
         {
-
             return View();
         }
         public IActionResult Editar(int id)
@@ -76,6 +75,7 @@ namespace ControleDeContatos.Controllers
                 return View(contato);
 
             }
+
             catch (System.Exception erro)
             {
 

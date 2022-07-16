@@ -13,7 +13,7 @@ namespace ControleDeContatos.Repositorio
         {
             return _bancoContext.Contatos.FirstOrDefault(x => x.Id == id);//para buscar o primeiro ou o item que esta dentro de contatos ,
                                                            //com uma clausula que diz que eu quero todo mundo da tabela contato
-                                                           //onde x=>x.Id== ao Id.
+                                                          //onde x=>x.Id== ao Id.
         }
         public List<ContatoModel> BuscarTodos()
         {
