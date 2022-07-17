@@ -26,9 +26,9 @@
                     <td>@item.IdImagem.ToString("D6")</td>
                     <td>@item.Titulo</td>
                     <td>
-                        <a asp-action="AplicaEfeito" asp-route-id="@item.IdImagem" class="btn btn-primary">Imagem</a>
-                        <a asp-action="Editar" asp-route-id="@item.IdImagem" class="btn btn-secondary">Editar</a>
-                        <a asp-action="Excluir" asp-route-id="@item.IdImagem" class="btn btn-danger">Excluir</a>
+                        <a  asp-action="AplicarEfeito" asp-route-id="@item.IdImagem" class="btn btn-primary"><i class="bi bi-magic"></i></a>
+                        <a asp-action="Alterar" asp-route-id="@item.IdImagem" class="btn btn-secondary"><i class="bi bi-pencil"></i></a>
+                        <a asp-action="Excluir" asp-route-id="@item.IdImagem" class="btn btn-danger"><i class="bi bi-trash"></i></a>
                       
                     </td>
                 </tr>

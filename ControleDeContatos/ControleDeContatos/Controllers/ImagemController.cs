@@ -99,15 +99,15 @@ public class ImagemController : Controller
     [HttpPost]
     public IActionResult Alterar(ImagemModel imagem)
     {
-        ModelState.Remove("ArquivoImagem");
-        if (ModelState.IsValid)
+        ModelState.Remove("ArquivoImagem");//remove a imagem do modo state a prorpiedade para evitar que ela seja validada
+        if (ModelState.IsValid)//se for valido eu troco o estado do objeto para modificado
         {
             db.Entry(imagem).State = EntityState.Modified;
             if (db.SaveChanges() > 0)
             {
                 if (imagem.ArquivoImagem != null)
                 {
-                    string caminhoArquivoImagem = ObterCaminhoImagem("\\Images\\", imagem.IdImagem, ".webp");
+                    string caminhoArquivoImagem = ObterCaminhoImagem("\\Images\\", imagem.IdImagem, ".webp");// para alterar ai imagem considerando obter o caminho da imagem atravez id e mando salvar a imagem significa que foi alterada  
                     pi.SalvarUploadImagemAsync(caminhoArquivoImagem, imagem.ArquivoImagem).Wait();
                 }
             }

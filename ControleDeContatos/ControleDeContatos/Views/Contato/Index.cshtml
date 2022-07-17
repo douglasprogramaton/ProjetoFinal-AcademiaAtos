@@ -27,7 +27,7 @@
     <br/>
       
 
-    <h1 class="display-4">Listagem de contatos</h1>
+    <h1 class="display-4">Agenda de Contatos  </h1>
 
  
 
@@ -49,13 +49,13 @@
             {
                 <tr>
                     <th scope="row">@contato.Id</th>
-                    <td>@contato.Name</td>
-                    <td>@contato.Email</td>
-                    <td>@contato.Celular</td>
+                    <td><i class="bi bi-person-fill"></i> @contato.Name</td>
+                    <td><i class="bi bi-envelope"></i> @contato.Email</td>
+                    <td><i class="bi bi-telephone-fill"></i> @contato.Celular</td>
                     <td>
                         <div class="btn-group" role="group">
-                            <a role="button" class="btn btn-primary" asp-route-id="@contato.Id" asp-controller="Contato" asp-action="Editar">Editar</a>
-                            <a role="button" class="btn btn-danger"asp-route-id="@contato.Id" asp-controller="Contato" asp-action="Apagar">Apagar</a>
+                            <a role="button" class="btn btn-primary" asp-route-id="@contato.Id" asp-controller="Contato" asp-action="Editar"><i class="bi bi-pencil"></i></a>
+                            <a role="button" class="btn btn-danger"asp-route-id="@contato.Id" asp-controller="Contato" asp-action="Apagar"><i class="bi bi-trash"></i></a>
                         </div>
                         <td/>
                 </tr>

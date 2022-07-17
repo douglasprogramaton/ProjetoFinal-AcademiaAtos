@@ -1,10 +1,13 @@
+
 html {
-  font-size: 14px;
+    font-size: 14px;
+  
 }
 
 @media (min-width: 768px) {
   html {
     font-size: 16px;
+  
   }
 }
 
@@ -14,8 +17,37 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-image: url(../Estilo/backgroundImg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
 }
+.credit {
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 1.3em;
+    color: whitesmoke;
+    padding: 1em;
+    border-radius: 0.5em;
+    position: relative;
+    
+    height: 50%;
+    left: 30%;
+    width: 35%;
+}
+
+  
+
+    .credit a {
+        color: turquoise;
+        transition: 1s;
+    }
+
+        .credit a:hover {
+            color: white;
+            text-shadow: 0 0 8px white;
+        }
 .field-validation-error{
     color:red;
 }
@@ -52,3 +84,4 @@ body {
     white-space: nowrap;
     text-align: center;
 }
+

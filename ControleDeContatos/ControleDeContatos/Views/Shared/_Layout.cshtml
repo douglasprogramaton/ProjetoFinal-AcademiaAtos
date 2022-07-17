@@ -11,13 +11,15 @@
     <link rel="stylesheet" href="/lib/bootstrap5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/lib/bootstrap-icons/font/bootstrap-icons.min.css">
     <link href="/lib/lightbox2/dist/css/lightbox.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
   
     
 </head>
 <body>
-    <header>
+    <header class="header">
+       
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
+            <div class="container ">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Olá Seja Bem-Vindo</a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
         aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +31,7 @@
             <a class="nav-link text-dark" asp-area="" asp-controller="Galerias" asp-action="Index" asp-link-class="link-ativo">Galeria</a>
         </li>        
         <li class="nav-item">
-            <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="Index">Contatos</a>
+            <a class="nav-link text-dark" asp-area="" asp-controller="Contato" asp-action="Index">Agenda de Contatos</a>
         </li>
         
         <li class="nav-item">
@@ -46,25 +48,26 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
-        </main>
+       </main>
   
     
-    <script src="/lib/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+  
     <script>
         lightbox.option({
             'albumLabel': 'Imagem %1 de %2'
         });
     </script>
 
-    <footer class="border-top footer text-muted">
-        <div class="container">
-              @await RenderSectionAsync("Scripts", required: false)
-            &copy; 2022 - Biblioteca de Imagens
-        </div>
-    </footer>
-   
+    </div>
+     <script>   
+          $('.close-alert').click(function () {
+           $(".alert").hide('hide');
+            });
+  </script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/lightbox2/dist/js/lightbox-plus-jquery.min.js"></script>
+  
    
-
+     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
