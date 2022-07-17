@@ -38,7 +38,6 @@
 
   <ItemGroup>
     <Folder Include="Enuns\NovaPasta\" />
-    <Folder Include="Templates\" />
   </ItemGroup>
 
 </Project>

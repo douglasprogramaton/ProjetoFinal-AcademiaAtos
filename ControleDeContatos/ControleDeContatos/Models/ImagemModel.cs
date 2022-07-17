@@ -15,13 +15,13 @@ namespace CadastrosBiblioteca.Models
         public GaleriaModel? Galerias { get; set; }
         [NotMapped,Required(ErrorMessage ="Imagem não enviada.")]
         [Display(Name ="Arquivo da imagem")]
-        public IFormFile ?ArquivoImagem  { get; set; }
+        public IFormFile ArquivoImagem  { get; set; }
         [NotMapped]
         public string CaminhoImagem
         {
             get
             {
-                var caminhoArquivoImagem = Path.Combine($"\\img\\", IdImagem.ToString("D6") + ".webp");
+                var caminhoArquivoImagem = Path.Combine($"\\Images\\", IdImagem.ToString("D6") + ".webp");
                 return caminhoArquivoImagem;
             }
         }

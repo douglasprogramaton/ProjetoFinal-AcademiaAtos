@@ -1,10 +1,8 @@
 ﻿@using CadastrosBiblioteca.Models
 
 @model IEnumerable<ImagemModel>
-@{
-    ViewBag.Titulo = $"Imagens da Galeria<br>{ViewBag.TituloGaleria}</br>";
-}
-<a asp-controller="Imagem" asp-action="Criar" asp-route-id="@ViewBag.IdGaleria" class="btn btn-primary">Nova Imagem</a>
+<h1> Imagens da Galeria. <br></h1>
+<a asp-controller="Imagem" asp-action="Cadastrar" asp-route-id="@ViewBag.IdGaleria" class="btn btn-primary">Nova Imagem</a>
 
 
 <hr>

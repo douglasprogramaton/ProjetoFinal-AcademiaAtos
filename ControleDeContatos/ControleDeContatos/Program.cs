@@ -6,7 +6,8 @@ using ControleDeContatos.Repositorio;
 using Microsoft.EntityFrameworkCore;
 using SixLabors.ImageSharp.Web.Caching;
 using SixLabors.ImageSharp.Web.DependencyInjection;
-
+using IProcessadorImagens = CadastrosBiblioteca.Repositorio.IProcessadorImagens;
+using ProcessadorImagmService = CadastrosBiblioteca.Repositorio.ProcessadorImagmService;
 
 var builder = WebApplication.CreateBuilder(args);
 
