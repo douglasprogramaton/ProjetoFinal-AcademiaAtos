@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "rGnXKKv/chVxQcqCV2pLmbZdvuq8+5tYazqn1E6R91A=",
+  "Hash": "YaCkTw19zyhq+/oAWPA/oBLWZzGQ5h2vnOeOBA4bh/I=",
   "Source": "CadastrosBiblioteca",
   "BasePath": "_content/CadastrosBiblioteca",
   "Mode": "Default",
@@ -136,12 +136,12 @@
       "OriginalItemSpec": "wwwroot\\Images\\000007.webp"
     },
     {
-      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\Images\\000011.webp",
+      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\Images\\000015.webp",
       "SourceId": "CadastrosBiblioteca",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
       "BasePath": "_content/CadastrosBiblioteca",
-      "RelativePath": "Images/000011.webp",
+      "RelativePath": "Images/000015.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -150,7 +150,41 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\Images\\000011.webp"
+      "OriginalItemSpec": "wwwroot\\Images\\000015.webp"
+    },
+    {
+      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\Images\\000018.webp",
+      "SourceId": "CadastrosBiblioteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
+      "BasePath": "_content/CadastrosBiblioteca",
+      "RelativePath": "Images/000018.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\000018.webp"
+    },
+    {
+      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\Images\\000020.webp",
+      "SourceId": "CadastrosBiblioteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
+      "BasePath": "_content/CadastrosBiblioteca",
+      "RelativePath": "Images/000020.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\000020.webp"
     },
     {
       "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\Images\\inteligencia-artificial-algoritmo-tecnologia-codigo-de-programacao-1554210815064_v2_450x337.jpg",
@@ -185,6 +219,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\por-que-a-linguagem-rust-esta-em-ascensao-2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\js\\main.js",
+      "SourceId": "CadastrosBiblioteca",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\",
+      "BasePath": "_content/CadastrosBiblioteca",
+      "RelativePath": "js/main.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\main.js"
     },
     {
       "Identity": "C:\\Users\\55119\\Desktop\\ProjetoFinal-AcademiaAtos\\ControleDeContatos\\ControleDeContatos\\wwwroot\\js\\site.js",

@@ -31,11 +31,3 @@
 <div class="form-group mt-3">
     <a asp-action="Index" asp-route-id="@Model.IdGaleria" class="btn btn-secondary">Voltar para a Galeria</a>
 </div>
-@section Scripts {
-<script>
-    document.addEventListener("DOMContentLoaded", function (e) {
-        var img = document.querySelector('#imgAtual');
-        img.src = img.src + '?' + new Date().getTime();
-    });
-</script>
-}

@@ -16,7 +16,7 @@ html {
   min-height: 100%;
 }
 
-body {
+body  {
     margin-bottom: 60px;
     background-image: url(../Estilo/backgroundImg.jpg);
     background-repeat: no-repeat;

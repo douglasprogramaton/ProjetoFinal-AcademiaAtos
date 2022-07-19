@@ -32,7 +32,7 @@ builder.Services.AddImageSharp(Options =>
 
 }).Configure<PhysicalFileSystemCacheOptions>(options =>
 {
-    options.CacheFolder = "img/cache";
+    options.CacheFolder = "Images/cache";
 });
 
 

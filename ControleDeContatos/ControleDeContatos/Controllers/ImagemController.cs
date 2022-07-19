@@ -14,9 +14,14 @@ public class ImagemController : Controller
     private readonly IWebHostEnvironment env;
 
     private readonly IProcessadorImagens pi;
-
+    /// <summary>
+    /// passa os três objetos dentro do contstrutor como injeção de dependência
+    /// </summary>
+    /// <param name="db"></param>
+    /// <param name="environment"></param>
+    /// <param name="processadorImagem"></param>
     public ImagemController(BancoContext db,
-        IWebHostEnvironment environment,
+        IWebHostEnvironment environment,                           
         IProcessadorImagens processadorImagem)
     {
         this.db = db;
@@ -55,7 +60,13 @@ public class ImagemController : Controller
         var novaImagem = new ImagemModel() { IdGaleria = galeria.IdGaleria };
         return View(novaImagem);
     }
-
+    /// <summary>
+    /// Método que processa a ação cadastrar
+    /// </summary>
+    /// <param name="pastaImagens"></param>
+    /// <param name="idImagem"></param>
+    /// <param name="extensao"></param>
+    /// <returns></returns>
     private string ObterCaminhoImagem(string pastaImagens, int idImagem, string extensao)
     {
         // <APPDIR>/wwwroot/imagens
@@ -74,10 +85,10 @@ public class ImagemController : Controller
             db.Imagens.Add(imagem);
             if (db.SaveChanges() > 0)
             {
-                string caminhoArquivoImagem = ObterCaminhoImagem("\\Images\\", imagem.IdImagem, ".webp");
-                pi.SalvarUploadImagemAsync(caminhoArquivoImagem, imagem.ArquivoImagem).Wait();
+                string caminhoArquivoImagem = ObterCaminhoImagem("\\Images\\", imagem.IdImagem, ".webp");// cria o caminho para a imagem
+                pi.SalvarUploadImagemAsync(caminhoArquivoImagem, imagem.ArquivoImagem).Wait();// Salva a imagem no caminho
             }
-            return RedirectToAction("Index", "Imagem", new { id = imagem.IdGaleria });
+            return RedirectToAction("Index", "Imagem", new { id = imagem.IdGaleria });//após salvar redireciona para a ação index de imagem
         }
         return View(imagem);
     }

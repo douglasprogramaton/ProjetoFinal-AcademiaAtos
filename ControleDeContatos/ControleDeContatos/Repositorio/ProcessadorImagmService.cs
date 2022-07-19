@@ -3,7 +3,10 @@ using SixLabors.ImageSharp.PixelFormats;
 using SixLabors.ImageSharp.Processing;
 
 namespace CadastrosBiblioteca.Repositorio
-{
+{/// <summary>
+/// class que herda de IProcessadorImagens  criando os efeitos que serão aplicados pelo usuário
+/// Foi processado com injeção de dependência 
+/// </summary>
     public class ProcessadorImagmService : IProcessadorImagens
     {
         public async Task<bool> AplicarEfeitoAsync(string caminhoArquivoImagem, EfeitoImagem efeito)
@@ -94,7 +97,13 @@ namespace CadastrosBiblioteca.Repositorio
                 return await Task.FromResult(false);
             }
         }
-
+        /// <summary>
+        /// Méto de salva uma imagem no MemoryStream em um arquivo Webp redimencinando-a
+        /// para ela ser quadrada de acordo com seu menor lado.
+        /// </summary>
+        /// <param name="caminhoArquivoImagem"></param>
+        /// <param name="imagem"></param>
+        /// <returns></returns>
         public async Task<bool> SalvarUploadImagemAsync(string caminhoArquivoImagem, IFormFile imagem)
         {
             if(imagem == null)
@@ -102,14 +111,14 @@ namespace CadastrosBiblioteca.Repositorio
                 return false;
             }
             var ms= new MemoryStream();
-            await imagem.CopyToAsync(ms);
+            await imagem.CopyToAsync(ms);//Copiando o conteudo que poi para o objeto imagenspara o ms
             ms.Position = 0;
-            return await SalvarImagemComoWebpAsync(caminhoArquivoImagem, ms,true);
+            return await SalvarImagemComoWebpAsync(caminhoArquivoImagem, ms,true);// dessa forma o método nao fica com muitas resposabilidades
         }
 
         private static async Task<bool> SalvarImagemComoWebpAsync(string caminhoArquivoImagem, MemoryStream ms, bool quadrada=true)
         {
-            var img = await Image.LoadAsync(ms);
+            var img = await Image.LoadAsync(ms);// trasforma o fluxo de bytes que esta na memória para objeto do tipo Image para ficar compreesivel para o imagesharp
             var extensaoImagem = caminhoArquivoImagem.Substring(caminhoArquivoImagem.LastIndexOf('.')).ToLower();
             
             

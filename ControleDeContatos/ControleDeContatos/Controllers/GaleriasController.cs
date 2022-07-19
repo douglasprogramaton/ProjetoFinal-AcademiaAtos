@@ -10,9 +10,9 @@ namespace CadastrosBiblioteca.Controllers
     {
         private readonly BancoContext _bancoContext;
         private readonly IGaleriaRepositorio _galeriaRepositorio;
-#pragma warning disable CS8618 // O campo não anulável precisa conter um valor não nulo ao sair do construtor. Considere declará-lo como anulável.
+
         public GaleriasController(IGaleriaRepositorio galeriaRepositorio)
-#pragma warning restore CS8618 // O campo não anulável precisa conter um valor não nulo ao sair do construtor. Considere declará-lo como anulável.
+
         {
             _galeriaRepositorio = galeriaRepositorio;
         }

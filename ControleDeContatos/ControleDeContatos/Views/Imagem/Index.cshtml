@@ -4,10 +4,10 @@
 <h1> Imagens da Galeria. <br></h1>
 <a asp-controller="Imagem" asp-action="Cadastrar" asp-route-id="@ViewBag.IdGaleria" class="btn btn-primary">Nova Imagem</a>
 
-
 <hr>
 @if(Model.Count()>0){
-    <table class="table table-striped tabela-imagem">
+    
+    <table class="table table-striped tabela-imagem" id="tabela-projeto">
       <thead>
         <tr>
             <th>Imagem</th>

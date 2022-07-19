@@ -9,7 +9,10 @@ namespace CadastrosBiblioteca.Models
         [Required]
         [Display(Name = "Título da Galeria")]
         public string Titulo { get; set; }
-
+        /// <summary>
+        /// Quando a Propriedade Virtual nao é usada nesse tipo de aplicação significa que
+        /// o lateloading que =significa carregamento tardido
+        /// </summary>
         public ICollection<ImagemModel> ?Imagens { get; set; }
     }
 }
